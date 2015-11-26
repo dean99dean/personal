@@ -1,0 +1,36 @@
+body {
+
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    /*background-image: url("../images/back.JPG");*/
+}
+
+a {
+  color: #09ff59;
+}
+
+#photo {
+    width:25%;
+    height:30%;
+    margin-left:100px;
+
+
+
+}
+
+.navbar {
+    position: relative;
+    top:-30px;
+}
+
+a.btn-flat, a.btn {
+    font-size: 1.1rem;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:10px;
+}
+
+
+#head.container.jumbotron {
+  background-color:transparent;
+}
