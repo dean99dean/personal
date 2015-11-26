@@ -10,4 +10,12 @@ router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'Express' });
 });
 
+router.get('/projects/drum', function(req, res, next) {
+  res.render('drum_description', { title: 'Express' });
+});
+
+router.get('/projects/drumgame', function(req, res, next) {
+  res.render('drum_game', { title: 'Express' });
+});
+
 module.exports = router;
