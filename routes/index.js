@@ -18,4 +18,8 @@ router.get('/projects/drumgame', function(req, res, next) {
   res.render('drum_game', { title: 'Express' });
 });
 
+//router.get('/blog', function(req, res, next) {
+//  res.render('blog', { title: 'Express' });
+//});
+
 module.exports = router;
