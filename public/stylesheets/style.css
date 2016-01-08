@@ -1,5 +1,6 @@
 body {
-
+    padding-top: 70px;
+    position: relative;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     /*background-image: url("../images/back.JPG");*/
 }
@@ -20,6 +21,7 @@ a {
 .navbar {
     position: relative;
     top:-30px;
+    background-color: white;
 }
 
 a.btn-flat, a.btn {
@@ -33,4 +35,14 @@ a.btn-flat, a.btn {
 
 #head.container.jumbotron {
   background-color:transparent;
+}
+
+#myName {
+    position: relative;
+    left:50px;
+}
+
+#myTabs {
+    position:relative;
+    right:50px;
 }
