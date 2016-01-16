@@ -33,16 +33,26 @@ a.btn-flat, a.btn {
 }
 
 
-#head.container.jumbotron {
+#jum.container.jumbotron {
   background-color:transparent;
 }
 
-#myName {
-    position: relative;
-    left:50px;
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    #myName {
+        position: relative;
+        left:50px;
+    }
+
+    #myTabs {
+        position:relative;
+        right:50px;
+        padding:10px;
+    }
 }
 
-#myTabs {
-    position:relative;
-    right:50px;
+.navbar{
+    background-color: rgba(255,255,255,0.95);
 }
