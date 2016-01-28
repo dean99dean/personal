@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
-
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 
     <link type="text/css" rel="stylesheet" href="stylesheets/materialize.min.css"  media="screen,projection"/>
     <script>
@@ -63,7 +63,7 @@
 
 
 <div class = "container" id="projects">
-    <h3 class="center-align">Projects</h3>
+    <h3 class="center-align" style = "font-family: 'Kaushan Script', cursive;">Projects</h3>
 
     <div class="row">
         <div class="col s12 m4">
@@ -237,6 +237,21 @@
             var pos = $(href).offset().top;
             $("html,body").animate({scrollTop: pos}, 1000);
             return false;
+        });
+
+        sections = $(".card").fadeTo(0, 0); //fade to 0 initially
+        $(window).scroll(function(d, h) {
+            // on scroll
+            $(".card").each(function(i) {
+                // console.log($(window).scrollTop());
+
+                    sectionsPos = $(this).offset().top + $(this).height();
+                    currPos = $(window).scrollTop() + $(window).height()+550;
+                    if (sectionsPos < currPos)
+                        $(this).fadeTo(1000, 1);
+
+
+            });
         });
 
 
